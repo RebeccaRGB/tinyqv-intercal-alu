@@ -11,28 +11,25 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-# Your project title
+# INTERCAL ALU
 
-Author: Your Name
+Author: Rebecca G. Bettencourt
 
-Peripheral index: nn
+Peripheral index: 36
 
 ## What it does
 
-Explain what your peripheral does and how it works
+(TODO)
 
 ## Register map
 
-Document the registers that are used to interact with your peripheral
-
 | Address | Name  | Access | Description                                                         |
 |---------|-------|--------|---------------------------------------------------------------------|
-| 0x00    | DATA  | R/W    | A word of data                                                      |
+| 0x00    | A     | R/W 32 | Left side argument, 32 bits.                                        |
+| 0x00    | AL    | R/W 16 | Left side argument, low 16 bits.                                    |
+| 0x02    | AH    | R/W 16 | Left side argument, high 16 bits.                                   |
+| 0x04    | B     | R/W 32 | Right side argument, 32 bits.                                       |
+| 0x04    | BL    | R/W 16 | Right side argument, low 16 bits.                                   |
+| 0x06    | BH    | R/W 16 | Right side argument, high 16 bits.                                  |
 
-## How to test
-
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+(TODO)
